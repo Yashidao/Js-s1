@@ -4,9 +4,15 @@
 
     // to get the value of an input: document.getElementById("element-id").value
 
+    let arr = document.getElementById("numbers").value;
+
+
     document.getElementById("run").addEventListener("click", () => {
 
-        // your code here
+        let a = arr.split(",");
+        a = a.sort((a,b)=>a-b);
+        alert(a);
+
 
     });
 
