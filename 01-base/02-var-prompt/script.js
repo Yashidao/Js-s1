@@ -7,5 +7,8 @@
     console.log('Hello Keller programmer');
 
     // YOUR CODE HERE
+
+    let name = prompt("Quel est votre nom complet?", "ex: Tran Kevin");
+    alert("Hello, " + name + "!");
 })();
 
