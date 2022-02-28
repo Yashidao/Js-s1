@@ -6,4 +6,8 @@
     console.log('Hello Keller programmer');
 
     // YOUR CODE HERE
+
+    let myString = "Hello, World!";
+
+    alert(myString);
 })();
