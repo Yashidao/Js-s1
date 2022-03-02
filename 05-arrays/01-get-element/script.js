@@ -16,7 +16,15 @@
         "grap",
         "cherry",
     ];
+let i=0;
+    document.getElementById("run").addEventListener("click", () => {
 
+        while(i < 4){
+            console.log(fruits[i]);
+            i++;
+        }
+
+    });
     // your code here
 
 })();

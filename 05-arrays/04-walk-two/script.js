@@ -18,6 +18,12 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+
+        fruits.forEach((el) => {
+            console.log(el);
+        })
+
+    });
 
 })();

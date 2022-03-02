@@ -20,6 +20,19 @@
         "cerise",
     ];
 
-    // your code here
+    let arr = [];
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        fruits.forEach((element) => {
+            if (!arr.includes(element)) {
+                arr.push(element);
+            }
+        });
+
+        console.log(fruits);
+        console.log(arr);
+        
+    });
 
 })();

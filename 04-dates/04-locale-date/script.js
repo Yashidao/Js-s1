@@ -4,8 +4,19 @@
 
 (() => {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    let arrMonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let arrDay = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-    // your code here
+    let d = new Date().toLocaleDateString('en-GB', { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+
+    let date = new Date();
+    let month = date.getMonth();
+    let day = date.getDay();
+    let nDay = date.getDate();
+    let year = date.getFullYear();
+    let hour = date.getHours();
+    let min = date.getMinutes();
+
+    document.getElementById("target").innerHTML = arrDay[day] + " " + nDay + " " + arrMonth[month] + " " + year + ", " + hour + "h" + min;
 
 })();

@@ -81,6 +81,27 @@
         },
     ];
 
-    // your code here
+    let sum;
+    let arr=[];
+    let i=0;
+
+    document.getElementById("run").addEventListener("click", () => {
+        
+        people.forEach((el)=>{
+            arr[i] = el.age;
+            i++;
+            if(i>=people.length){
+                i=0;
+            }
+        });
+
+        sum = arr.reduce(function(a,b){
+            return a + b;
+        });
+        //console.log(people);
+        console.log(arr);
+        console.log(sum);
+        
+    });
 
 })();

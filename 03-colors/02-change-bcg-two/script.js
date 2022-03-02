@@ -3,6 +3,10 @@
 
 (() => {
 
-    // your code here
+    // partir de l'element puis luis ajouter un event
+    document.getElementById("run").addEventListener("click", () => {
+        let color = document.getElementById("color").value;
+        document.body.style.background = color;
+    });
 
 })();

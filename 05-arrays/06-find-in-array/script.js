@@ -80,6 +80,18 @@
         },
     ];
 
-    // your code here
+    let a;
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        a = people.findIndex(function (elem, index) {
+            if (elem.firstname == 'Jean')
+                return elem;
+        });
+
+        console.log(people[a].email);
+        console.log(a);
+
+    });
 
 })();

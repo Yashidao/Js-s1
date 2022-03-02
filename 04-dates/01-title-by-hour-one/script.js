@@ -6,6 +6,13 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    // your code here
+    let d = new Date();
+    let h = d.getHours();
+    if(h<18 && 23>h){
+        document.getElementById("target").innerHTML = "Hello it's before 18h!"
+    }
+    else{
+        document.getElementById("target").innerHTML = "Good evening it's after 18h!"
+    }
 
 })();
