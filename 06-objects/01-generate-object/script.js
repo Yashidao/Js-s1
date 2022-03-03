@@ -2,5 +2,15 @@
 
 
 (() => {
-    // your code here
+    let myObject = {
+        firstName: "Kevin-May",
+        lastName: "Tran",
+        age: "30",
+        city: "Manage",
+        country: "Belgium"
+    }
+
+    document.getElementById("run").addEventListener('click', () => {
+        console.log(myObject);
+    });
 })();
