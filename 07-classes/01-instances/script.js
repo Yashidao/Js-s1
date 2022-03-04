@@ -8,5 +8,10 @@
             this.age = age;
         }
     }
-    // your code here
+    let firstCat = new Cat("Skitty", 9);
+    let secondCat = new Cat("Pixel", 6);
+
+    document.getElementById("run").addEventListener('click', () => {
+        console.log(firstCat, secondCat);
+    });
 })();
