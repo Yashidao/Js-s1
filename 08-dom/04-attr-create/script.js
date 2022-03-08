@@ -3,6 +3,11 @@
 
 (() => {
 
-    // your code here
+    let img = document.getElementById("source").getAttribute('data-image');
+    let para = document.createElement("img");
+    para.setAttribute('src', img);
+    document.getElementById("target").appendChild(para);
+    console.log(para);
 
 })();
+

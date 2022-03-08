@@ -3,6 +3,15 @@
 
 (() => {
 
-    // your code here
+    document.getElementById("run").addEventListener('click', () => {
+        let code = document.getElementById("pass-one").value;
+        let codeBis = document.getElementById("pass-two").value;
+        if (code == codeBis) {
+            alert("Your password is correct!");
+        }
+        else {
+            document.getElementById("pass-two").style.borderBlockColor = "red";
+        }
+    });
 
 })();

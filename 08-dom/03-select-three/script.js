@@ -3,6 +3,8 @@
 
 (() => {
 
-    // your code here
-
+    let collection = document.getElementsByClassName("target");
+    for(i=0;i<collection.length;i++){
+        collection[i].innerHTML = "owned";
+    }
 })();
